@@ -7,8 +7,11 @@ CC      = cc
 CFLAGS  = -Wall -Wextra -Werror
 
 SRCS    = src/ft_strlen.s \
+          src/ft_strcpy.s \
           src/ft_strcmp.s \
-          src/ft_write.s
+          src/ft_strdup.s \
+          src/ft_write.s \
+          src/ft_read.s
 
 OBJS    = $(SRCS:.s=.o) 
 
@@ -27,7 +30,7 @@ clean:
 	rm -f $(OBJS)
 
 fclean: clean
-	rm -f $(NAME) tests_exe
+	rm -f $(NAME) tests_exe test_file.txt
 
 re: fclean all
 

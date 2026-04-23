@@ -10,6 +10,7 @@
 # include <fcntl.h>
 # include <stdbool.h>   
 # include <strings.h> 
+# include <errno.h> 
 
 size_t  ft_strlen(const char *s);
 char*   ft_strcpy(char *restrict dst, const char *restrict src);
